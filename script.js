@@ -49,3 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial slide
     changeSlide();
 });
+
+
+ // Section slide right
+
+
+ 
