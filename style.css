@@ -374,3 +374,71 @@ body {
   }
   
 
+/*------------------Gallery---------------------------*/
+
+
+#gallery {
+    padding-left: 20px;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+}
+
+
+
+#gallery h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 200%;
+    color: #FF2B83;
+    margin-bottom: 10px;
+}
+
+#gallery hr {
+    width: 65%;
+    background-color: #323232;
+    height: 3px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.gimage {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    gap: 3px;
+    animation: imageAnimation 20s linear infinite;
+}
+
+
+@keyframes imageAnimation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-450%);
+    }
+  }
+
+
+
+
+.gimage img {
+    width: 300px;
+}
+
+
+#gallery button {
+    padding: 15px 50px;
+    /* margin-right: 90px;
+    margin-left: 90px; */
+    border-radius: 4px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    background-color: #FF2B83;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
