@@ -100,7 +100,7 @@ body {
     /* background-image: url('image/2.jpg'); */
 
     background: linear-gradient(to bottom, #131212b8, #100f0fb2), url("image/2.jpg");
-    height: 500px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,6 +115,8 @@ body {
     justify-content: center;
     color: white;
     padding: 70px 10px;
+    position: relative;
+    /* bottom: 20px; */
     
 }
 
@@ -134,7 +136,7 @@ body {
 .heroinfo p {
     font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -165,22 +167,29 @@ body {
     color: rgb(33, 33, 33);
     margin-bottom: 50px;
     margin-top: 50px;
+    padding-right: 20px;
     
 }
 
 .offertext h3 {
     font-family: "Playfair Display", serif;
-    font-size: 200%;
-    color: #FF2B83;
+    font-size: 150%;
+    color: #1d1d1d;
     margin-bottom: 10px;
+}
+
+.offertext span {
+    color: #FF2B83;
 }
 
 .offertext hr {
     width: 53%;
-    background-color: #323232;
-    height: 3px;
+    background-color: #666666;
+    height: 2px;
     border: none;
     margin-bottom: 50px;
+    position: relative;
+    top: 20px;
 }
 
 .offertext h5 {
@@ -216,11 +225,13 @@ body {
 }
 
 .ctext hr {
-    width: 65%;
-    background-color: #323232;
-    height: 3px;
+    width: 53%;
+    background-color: #666666;
+    height: 2px;
     border: none;
     margin-bottom: 50px;
+    position: relative;
+    top: -10px;
 }
 
 
@@ -229,7 +240,26 @@ body {
     margin-bottom: 20px;
     position: relative;
     top: -30px;
+    color: #FF2B83;
 }
+
+
+
+.ctext2 p {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    top: 30px;
+    color: #FF2B83;
+}
+
+
+.ctext2 span {
+   
+    color: #1d1d1d;
+}
+
+
 
 .coutline {
     display: flex;
@@ -244,7 +274,7 @@ body {
 }
 
 .coutline h5 {
-    padding-top: 4px;
+    padding-top: 0px;
     font-weight: 500;
     font-size: 15px;
 }
@@ -373,6 +403,34 @@ body {
     }
   }
   
+  .dimage button {
+    padding: 15px 50px;
+    /* margin-right: 90px;
+    margin-left: 90px; */
+    border-radius: 4px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    background-color: #FF2B83;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    animation: shake 2s ease-in-out infinite;
+
+    animation-delay: 10s, 0s; 
+}
+
+
+.dimage img{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+
+
 
 /*------------------Gallery---------------------------*/
 

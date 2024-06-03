@@ -6,18 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = [
         {
             image: 'image/2.jpg',
-            title: 'Online Dessert Class',
-            text: 'Become a better baker with our expert tips and tricks'
+            title: 'COMPLETE DESSERT/ DESSERT ',
+            typingTitle: 'CATERING GUIDE',
+            text: 'Everything you need know about how to make Premium Desserts and The Complete Business of Dessert Catering'
         },
         {
-            image: 'image/4.jpg',
-            title: 'Master the Art of Baking',
-            text: 'Join our classes and bake like a professional pro'
+            image: 'image/11.jpg',
+            title: 'COMPLETE DESSERT/ DESSERT ',
+            typingTitle: 'CATERING GUIDE',
+            text: 'Everything you need know about how to make Premium Desserts and The Complete Business of Dessert Catering'
         },
         {
             image: 'image/5.jpg',
-            title: 'From a Novice to Pro',
-            text: 'Discover recipes that will impress everyone'
+            title: 'COMPLETE DESSERT/ DESSERT ',
+            typingTitle: 'CATERING GUIDE',
+            text: 'Everything you need know about how to make Premium Desserts and The Complete Business of Dessert Catering'
         }
     ];
     
@@ -26,22 +29,32 @@ document.addEventListener('DOMContentLoaded', () => {
     function changeSlide() {
         hero.style.backgroundImage = `linear-gradient(to bottom, #131212b8, #100f0fb2), url('${slides[currentIndex].image}')`;
 
-        // Fade out current text
-        heroTitle.style.opacity = 0;
-        heroText.style.opacity = 0;
-
-        setTimeout(() => {
-            // Change text after fade out
-            heroTitle.textContent = slides[currentIndex].title;
-            heroText.textContent = slides[currentIndex].text;
-
-            // Fade in new text
-            heroTitle.style.opacity = 1;
-            heroText.style.opacity = 1;
-        }, 500);
-
         currentIndex = (currentIndex + 1) % slides.length;
     }
+
+    function setText() {
+        heroText.textContent = slides[0].text;
+
+        const staticTitle = slides[0].title;
+        const typingTitle = slides[0].typingTitle;
+        
+        heroTitle.innerHTML = staticTitle;
+        
+        let typingIndex = 0;
+
+        function type() {
+            if (typingIndex < typingTitle.length) {
+                heroTitle.innerHTML += typingTitle.charAt(typingIndex);
+                typingIndex++;
+                setTimeout(type, 100);
+            }
+        }
+
+        type();
+    }
+
+    // Set text and title once initially
+    setText();
 
     // Change slide every 5 seconds
     setInterval(changeSlide, 5000);
@@ -49,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial slide
     changeSlide();
 });
-
 
  // Time countdown
 
