@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
  // Time countdown
 
 
- var countDownDate = new Date("June 7, 2024 00:00:00").getTime();
+ var countDownDate = new Date("June 21, 2024 00:00:00").getTime();
     var x = setInterval(function(){
         var now = new Date().getTime();
         var distance = countDownDate - now;
